@@ -1,0 +1,124 @@
+
+@media screen and (min-width: 200px) and (max-width: 640px) {
+
+    .catalogue{
+    // text-align: center;
+    // float: left;  
+    text-align: center;
+    }
+    .deco{
+        margin-left: 10px;
+        float: left;
+        }
+    .google{
+    margin-right: 15px;
+    float: right;
+    }
+
+    .menu{
+        margin-left: 15px;
+    float: left;
+    }
+
+    .back{
+        margin-left: 10px;
+    float: left;
+    }
+
+    .person{
+    float: right;  
+    padding: 0px,0px,30px;
+    }
+
+    .basket{
+        margin-right: 10px;
+    float: right;   
+    }
+
+    .card{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .notif{
+        float: right; 
+    }
+    
+}
+
+
+
+ion-card {
+    max-width: 250px;
+    height:auto;
+    margin: 7px;
+}
+
+.title{
+    font-size: 1.6em;
+}
+.subtitle{
+    font-size: 1.2em;
+    text-transform: capitalize;
+}
+
+@media only screen and (min-width : 1224px){
+    .notif{
+        float: right; 
+    }
+    .deco{
+        margin-left: 10px;
+        float: left;
+        }
+    .catalogue{
+        // text-align: center;
+        // float: left;  
+        text-align: center;
+        }
+    
+        .google{
+        margin-right: 15px;
+        float: right;
+        }
+    
+        .menu{
+            margin-left: 15px;
+        float: left;
+        }
+    
+        .back{
+            margin-left: 10px;
+        float: left;
+        }
+    
+        .person{
+        float: right;  
+        padding: 0px,0px,30px;
+        }
+    
+        .basket{
+            margin-right: 20px;
+        float: right;   
+        }
+        
+        .card{
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: 20px;
+        }
+        ion-searchbar {
+            width: 50%;
+            margin: 20px auto;
+        }
+    }
+    * {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+    }
+    ion-button {
+        --background-hover: #3880ff !important;
+      }
+    ion-button:hover{
+    --background-hover: #3880ff !important;
+    }

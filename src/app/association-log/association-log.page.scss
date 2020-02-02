@@ -1,0 +1,61 @@
+@media screen and (min-width: 200px) and (max-width: 640px) {
+    
+    .connexion{
+    text-align: center;
+    }
+
+    .bouton_co{
+    text-transform: capitalize;
+    }
+
+    .back{
+    margin-left: 10px;
+    float: left;
+    }
+
+    .new_partenaire{
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width : 1224px){
+
+    .connexion{
+        text-align: center;
+        }
+    
+   .back{
+            margin-left: 10px;
+            float: left;
+    }
+
+    .bouton_co{
+        text-transform: capitalize;
+        }
+        
+    .new_partenaire{
+        padding: 10px;
+        text-align: center;
+    }
+    .identifiant {
+        width: 50%;
+        margin: 0px auto;
+    }
+    .motdepasse {
+        width: 50%;
+        margin: 0px auto;
+    }
+}
+ion-button {
+    max-width: 200px;
+    margin: 0px auto ;
+    padding: 10px;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+* {
+    font-family: 'Open Sans', sans-serif;
+  }

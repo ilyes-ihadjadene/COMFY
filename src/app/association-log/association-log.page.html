@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar class="toolbar">
+      <ion-icon class="back" (click)="back()" name="arrow-back"></ion-icon>
+      <ion-title class="connexion">Connexion</ion-title>
+  </ion-toolbar> 
+</ion-header>
+
+
+<ion-content class="ion-padding">
+    <ion-list>
+    
+        <ion-item class="identifiant">
+          <ion-label position="floating">Identifiant</ion-label>
+          <ion-input type="text" [(ngModel)]="username"></ion-input>
+        </ion-item>
+        
+        <ion-item class="motdepasse">
+          <ion-label position="floating">Mot de Passe</ion-label>
+          <ion-input type="password" [(ngModel)]="password"></ion-input>
+        </ion-item>
+        
+      </ion-list>
+      <ion-button class="ion-padding" fill="solid" expand="block" color="dark" (click)="loginEmailPassword()" mode="ios">
+          Connexion
+      </ion-button>
+      <div class="new_partenaire">
+        <ion-button class="ion-padding devenirpartenaire" fill="solid" expand="block" color="dark" mode="ios" color="primary">
+          <ion-icon slot="start" name="mail"></ion-icon>
+          <a href="mailto:welovecomfy@gmail.com?subject=Devenir%20partenaire&body=Email:%20%20%20%0D%0A%0D%0ANom%20complet%20%3A%0D%0A%0D%0AO%C3%B9%20avez-vous%20entendu%20parler%20de%20nous%20%3F:">
+            devenir partenaire
+           </a>      
+        </ion-button>
+        
+      </div>
+  </ion-content> 

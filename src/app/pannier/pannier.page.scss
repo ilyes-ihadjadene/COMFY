@@ -1,0 +1,25 @@
+@media screen and (min-width: 200px) and (max-width: 640px) {
+    .panier{
+     // text-align: center;
+     // float: left;  
+      text-align: center;
+    }
+    .back{
+        float: left;
+    }
+}
+ion-button {
+    max-width: 200px;
+    margin: 20px auto ;
+    border-radius: 15px;
+}
+* {
+    font-family: 'Open Sans', sans-serif;
+  }
+  @media only screen and (min-width : 1224px){
+    .ligne {
+        width: 50%;
+        margin: 20px auto ;
+    }
+  }
+  

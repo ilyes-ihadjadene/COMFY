@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar class="toolbar">
+    <ion-icon class="back" (click)="back()" name="arrow-back"></ion-icon>
+    <!-- <button ion-button menuToggle (click)="pannier()"> Menu</button> -->
+    <ion-icon class ="menu" (click)="back()" name="menu"></ion-icon>
+    <ion-icon class= "basket" (click)="pannier()" name="cart"></ion-icon>
+    <ion-badge class= "notif" color="danger" *ngIf="notif !== 0 ">{{notif}}</ion-badge>
+    <img class="google" (click)="loginGoogle()" width="20px" alt="Google &quot;G&quot; Logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png"/>
+    <ion-title class="catalogue">CATALOGUE</ion-title>
+ </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-searchbar showcancelbutton="" (keyup)="search($event)"></ion-searchbar>
+
+      <div class="card">
+ 
+      <ion-card *ngFor="let produit of produits">
+        <img src="{{produit.image}}" />
+        <!-- <ion-img>{{produit.image}}</ion-img> -->
+        <ion-card-header>
+          <ion-card-title class="title" style="text-align: center">{{produit.title | titlecase}}</ion-card-title>
+
+          <ion-card-subtitle class="subtitle" style="text-align: center">{{produit.prix}}€</ion-card-subtitle>
+          <!-- <ion-card-subtitle class="subtitle" style="text-align: center">{{produit.description}}</ion-card-subtitle> -->
+        </ion-card-header>
+          <ion-item>
+              <ion-label>Quantité</ion-label>
+              <ion-select okText="Ok" id="{{produit.id}}-select-value" cancelText="Abandonner">
+                  <ion-select-option value="1">1</ion-select-option>
+                  <ion-select-option value="2">2</ion-select-option>
+                  <ion-select-option value="3">3</ion-select-option>
+                </ion-select>
+          </ion-item>
+
+        <ion-card-content style="text-align: center">   
+            <ion-button color="medium" expand="block" (click)="addToCart(produit)">
+                <ion-icon slot="start" name="cart"></ion-icon>
+                AJOUTER
+              </ion-button>
+          <!-- <button (click)="pannier()">Ajouter au pannier</button> -->
+        </ion-card-content>
+      </ion-card>
+    </div>
+
+</ion-content>

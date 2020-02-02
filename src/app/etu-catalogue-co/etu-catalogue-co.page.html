@@ -1,0 +1,40 @@
+<ion-header>
+    <ion-toolbar class="toolbar">
+        <ion-icon class= "basket" name="cart" (click)="pannier()"></ion-icon>
+        <ion-badge class= "notif" color="danger" *ngIf="notif !== 0 ">{{notif}}</ion-badge>
+        <ion-icon class="deco" (click)="signOutGoogle()" name="close-circle"></ion-icon>
+        <ion-title class="catalogue">Catalogue</ion-title>
+     </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-searchbar showcancelbutton="" (keyup)="search($event)"></ion-searchbar>
+    <p style="text-align: center" class="welcome">Welcome {{data.user.displayName}}</p>
+    <div class="card">
+        <ion-card *ngFor="let produit of produits">
+          <img src="{{produit.image}}" />
+          <!-- <ion-img>{{produit.image}}</ion-img> -->
+          <ion-card-header>
+              <ion-card-title class="title" style="text-align: center">{{produit.title | titlecase}}</ion-card-title>
+              <ion-card-subtitle class="subtitle" style="text-align: center">{{produit.prix}}€</ion-card-subtitle>
+              <!-- <ion-card-subtitle class="subtitle" style="text-align: center">{{produit.description}}</ion-card-subtitle> -->
+          </ion-card-header>
+          <ion-item>
+              <ion-label>Quantité</ion-label>
+              <ion-select okText="Ok" id="{{produit.id}}-select-value" cancelText="Abandonner">
+                <ion-select-option value="1">1</ion-select-option>
+                <ion-select-option value="2">2</ion-select-option>
+                <ion-select-option value="3">3</ion-select-option>
+              </ion-select>
+          </ion-item>
+
+        <ion-card-content style="text-align: center">   
+            <ion-button color="medium" expand="block" (click)="addToCart_co(produit)">
+                <ion-icon slot="start" name="cart"></ion-icon>
+                Ajouter
+              </ion-button>
+            
+          </ion-card-content>
+        </ion-card>
+      </div>
+  </ion-content>

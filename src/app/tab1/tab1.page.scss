@@ -1,0 +1,67 @@
+@media screen and (min-width: 200px) and (max-width: 640px) {
+
+  .logo{
+    margin-top: 70px;
+    width: 200px;
+  }
+
+  .association{
+
+    margin-top: 50px;
+    text-align: center;
+    text-transform: capitalize;
+
+  }
+
+  .etudiant{
+    text-align: center;
+    text-transform: capitalize;
+  }
+}
+
+
+
+@media only screen and (min-width : 1224px){
+  
+  .logo{
+    margin-top: 70px;
+    width: 400px; 
+  }
+
+  // .welcome-card {
+  //   margin-top: 80px;
+  //   width: 300px;
+  //   margin-left: 550px;
+  // }
+
+  .association{
+
+    margin-top: 50px;
+    text-align: center;
+    text-transform: capitalize;
+
+  }
+
+  .etudiant{
+    text-align: center;
+    text-transform: capitalize;
+
+  }
+}
+.content {
+  text-align: center;
+  color: red;
+}
+ion-button {
+  color: red;
+  margin: auto;
+  margin-bottom: 25px;
+  border-radius: 20px;
+  min-width: 200px;
+}
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+ion-content {
+  --background: url(https://images.unsplash.com/photo-1471923373921-461fdb6de4e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1369&q=80) no-repeat center/cover fixed;
+}
